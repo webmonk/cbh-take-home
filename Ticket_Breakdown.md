@@ -23,7 +23,7 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 ###### Time/Effort Estimates: 
 - 2hours / 5/10
 ###### Implementation Details: 
-- Create a new table "facility_agent_term" with these columns: id, agent_id, facility_id and created_at. id is the primary key with auto increment.
+- Create a new table "facility_agent_term" with these columns: id, agent_id, facility_id , custom_id and created_at. id is the primary key with auto increment.
 - On the individual agent page on the front-end, add input field to edit the custom id.
 - Get the id of facility from the logged in session and the id of the agent from the agent page
 - Check the database to make sure a record of the agent id and the facility id does not exist. If it exists, throw an error notifying the user on the front-end. If it doesn't exist, save the record to the database and display a success message to the user on the front-end
@@ -35,8 +35,8 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 ###### Time/Effort Estimates: 
 - 1hour / 4/10
 ###### Implementation Details: 
-- Create a new table "facility_agent_term" with these columns: id, agent_id, facility_id and created_at. id is the primary key with auto increment.
-- On the individual agent page on the front-end, add input field to edit the custom id.
+- Run a query that checks the facility_agent_term table for the facility id 
+- On the individual agent page on the front-end, display the custom id of the agent .
 - Get the id of facility from the logged in session and the id of the agent from the agent page
 - Check the database to make sure a record of the agent id and the facility id does not exist. If it exists, throw an error notifying the user on the front-end. If it doesn't exist, save the record to the database and display a success message to the user on the front-end
 
