@@ -47,6 +47,6 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 ###### Time/Effort Estimates: 
 - 1hour / 4/10
 ###### Implementation Details: 
-- Create/Modify the report generation page to include a form with an input field to enter the custom id of an agent
+- Create/Modify the report generation page with access granted to only logged in facilities and should include a form with an input field to enter the custom id of an agent
 - Using the custom_id and the facility_id, run a query that finds the agent_id from the facility_agent_term table.
 - Use the agent id retrieved to fetch the details of the agent from the agents table and generate the report.
