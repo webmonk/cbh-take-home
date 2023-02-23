@@ -35,10 +35,10 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 ###### Time/Effort Estimates: 
 - 1hour / 4/10
 ###### Implementation Details: 
-- Run a query that checks the facility_agent_term table for the facility id 
-- On the individual agent page on the front-end, display the custom id of the agent .
-- Get the id of facility from the logged in session and the id of the agent from the agent page
-- Check the database to make sure a record of the agent id and the facility id does not exist. If it exists, throw an error notifying the user on the front-end. If it doesn't exist, save the record to the database and display a success message to the user on the front-end
+- Run a query that checks the facility_agent_term table if a rcord exists with the agent id and facility id.
+- On the individual agent page on the front-end, display the custom id of the agent if it exists from the initial query.
+- Display an edit button that opens up a form to edit the custom id. Update the custom id in the facility_agent_term table on submit.
+- Display a delete button that deletes the record from the facility_agent_term table.
 
 ## Ticket 3: 
 - As a facility,  I want to be able to generate reports for each agent with the custom id I have assigned to the agent.
@@ -47,7 +47,6 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 ###### Time/Effort Estimates: 
 - 1hour / 4/10
 ###### Implementation Details: 
-- Create a new table "facility_agent_term" with these columns: id, agent_id, facility_id and created_at. id is the primary key with auto increment.
-- On the individual agent page on the front-end, add input field to edit the custom id.
-- Get the id of facility from the logged in session and the id of the agent from the agent page
-- Check the database to make sure a record of the agent id and the facility id does not exist. If it exists, throw an error notifying the user on the front-end. If it doesn't exist, save the record to the database and display a success message to the user on the front-end
+- Create/Modify the report generation page to include a form with an input field to enter the custom id of an agent
+- Using the custom_id and the facility_id, run a query that finds the agent_id from the facility_agent_term table.
+- Use the agent id retrieved to fetch the details of the agent from the agents table and generate the report.
