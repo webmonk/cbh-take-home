@@ -16,10 +16,13 @@ Based on the information given, break this ticket down into 2-5 individual ticke
 You will be graded on the level of detail in each ticket, the clarity of the execution plan within and between tickets, and the intelligibility of your language. You don't need to be a native English speaker, but please proof-read your work.
 
 ## Your Breakdown Here
-## Ticket 1: As a facility,  I want to be able to save my own custom ids for each Agent.
-# Acceptance Criteria: Given that I have the role of a facility, when I go to the list of agents and click on an individual agent, then edit the agent; the system should allow me enter a custom id for that agent
-# time/effort estimates: 2hours / 5/10
-# implementation details: 
+## Ticket 1: 
+- As a facility,  I want to be able to save my own custom ids for each Agent.
+###### Acceptance Criteria: 
+- Given that I have the role of a facility, when I go to the list of agents and click on an individual agent, then edit the agent; the system should allow me enter a custom id for that agent
+###### time/effort estimates: 
+- 2hours / 5/10
+###### implementation details: 
 - Create a new table "facility_agent_term" with these columns: id, agent_id, facility_id and created_at. id is the primary key with auto increment.
 - On the individual agent page on the front-end, add input field to edit the custom id.
 - Get the id of facility from the logged in session and the id of the agent from the agent page
